@@ -1,0 +1,7 @@
+/build/
+/dist/
+/nbproject/private/
+/target/
+dependency-reduced-pom.xml
+/.idea/
+/h2test*

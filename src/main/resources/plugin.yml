@@ -1,0 +1,33 @@
+name: Gildie
+version: 1.0
+main: pl.panryba.mc.guilds.Plugin
+database: true
+depend: [FishDb, Hardcore, WorldGuard, WorldEdit]
+commands:
+  gildia:
+    description: Zarzadzanie gildiami
+    usage: /gildia pomoc
+    aliases: [g]
+  zgildia:
+    description: Administracyjne zarzadzanie gildiami
+    usage: /zgildia
+    permission: guilds.administration
+permissions:
+  guilds.create:
+    description: Pozwala na tworzenie gildii
+    default: true
+  guilds.join:
+    description: Pozwala na dolaczenie do gildii
+    default: true
+  guilds.limits.unlimited:
+    description: Pozwala na nieograniczona liczbe czlonkow gildii
+    default: op
+  guilds.teleport.any:
+    description: Pozwala na teleportacje do dowolnej gildii
+    default: op
+  guilds.teleport.ally:
+    description: Pozwala na teleportacje do sojusznikow
+    default: op
+  guilds.administration:
+    description: Pozwala na administracyjne zarzadzanie gildiami
+    default: op
